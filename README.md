@@ -1,6 +1,6 @@
 # Bowling Game Kata
 The start of the classic bowling game kata, in Java with JUnit
-For Eclipse 4.5 with Java 1.8
+For Eclipse 4.7 with Java 1.8
 
 This is the well-known "Bowling Game Kata". It's presented here as an introduction to TDD.
 
@@ -44,14 +44,14 @@ siemens.plm.bowlinggame.tests already contains a file, BowlingGameTests.java, wh
 
 ### Step 2. The first test, Red stage: write the first failing test
 
-1. Open the file BowlingGameTests.kava. The first test, when20GutterBallsRolled_ScoreShouldBe0, has been started for you. 
+1. Open the file BowlingGameTests.java. The first test, when20GutterBallsRolled_ScoreShouldBe0, has been started for you. 
 1. Implement the test as follows
-  1. Creates a new BowlingGame object. Don't worry that the code won't complile, just carry on coding.
+  1. Create a new BowlingGame object. Don't worry that the code won't complile, just carry on coding.
   2. Use it to call roll(0) 20 times
   3. Call the game's score() method to request the score. 
-  4. Finally the test checks that the score is 0. 
+  4. Finally, add an assert to check that the scopre is 0. 
 1. Now implement just enough code to get the assert to fail. You will have to 
-  1. Write a new BowlingGame class in the bowlinggame package.
+  1. Write a new BowlingGame class **in the bowlinggame package**.
   2. Create a new method in BowlingGame, void roll(int pins). Leave the method body empty.
   3. Create another new method in BowlingGame, int score(). Implement the method by returning -1. (Why don't we return 0 here?)
   4. Build the code, ensure it compiles and links.
